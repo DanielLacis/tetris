@@ -1,0 +1,6 @@
+add some styling and text to the page
+add restart option on game end
+hi scores
+levels (decrease loop interval)
+add tabindex?
+set autofocus to game
