@@ -1,13 +1,13 @@
 <html>
   <head>
-    <title>Asteroids</title>
+    <title>Tetris</title>
   </head>
 
   <body>
     <canvas></canvas>
 
-    <script type="application/javascript" src="vendor/keymaster.js"></script>
-
+    <!-- // <script type="application/javascript" src="vendor/keymaster.js"></script> -->
+    <script src="lib/jquery-1.11.2.js"></script>
     <script type="application/javascript" src="lib/util.js"></script>
     <script type="application/javascript" src="lib/piece.js"></script>
     <script type="application/javascript" src="lib/board.js"></script>
@@ -15,10 +15,14 @@
     <script type="application/javascript" src="lib/gameView.js"></script>
     <script type="application/javascript">
       (function () {
-        var canvasEl = document.getElementsByTagName("canvas")[0];
-        canvasEl.width = Tetris.Board.DIMS[0];
-        canvasEl.height = Tetris.Board.DIMS[1];
-        var ctx = canvasEl.getContext("2d");
+        // var canvasEl = document.getElementsByTagName("canvas")[0];
+        // canvasEl.width = Tetris.Board.DIMS[1];
+        // canvasEl.height = Tetris.Board.DIMS[0];
+        // var ctx = canvasEl.getContext("2d");
+        var $canvasEl = $('canvas')
+        $canvasEl.prop("width", Tetris.Board.DIMS[1]);
+        $canvasEl.prop("height", Tetris.Board.DIMS[0]);
+        var ctx = $canvasEl[0].getContext("2d");
         var game = new Tetris.Game();
         new Tetris.GameView(game, ctx).start();
       })();
