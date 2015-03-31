@@ -1,0 +1,87 @@
+h1.heading {
+  text-align: center;
+  width: 100%;
+  padding: 25px 0 0 0;
+  font-size: 32pt;
+}
+
+div.main {
+  width: 850px;
+  height:650px;
+}
+
+div.main:after {
+  content: "";
+  clear: both;
+  display: block
+}
+
+div.canvas-container {
+  border: 10px solid cornflowerblue;
+  float: left;
+}
+
+div.other {
+  width: 225px;
+  float: left;
+  padding: 0 50px 0 50px;
+}
+
+button.restart {
+  float: right;
+  background-color: gray;
+  font-size: 18pt;
+}
+
+strong.score {
+  float: left
+}
+
+div.other > ul {
+  list-style: none;
+  padding: 0;
+}
+
+div.other > ul li {
+  margin: 0 auto;
+  font-size: 18pt;
+}
+
+div.other > ul li:after {
+  content: "";
+  clear: both;
+  display: block
+}
+
+div.misc {
+
+}
+
+div.misc:after {
+  content: "";
+  clear: both;
+  display: block
+}
+
+h3.instructions {
+  text-align: center;
+  font-size: 24pt;
+}
+
+body {
+
+}
+
+span.left {
+  float: left
+}
+
+span.right {
+  float: right
+}
+
+h3.paused {
+  margin: 0 auto;
+  padding: 25px 0;
+  text-align: center;
+}

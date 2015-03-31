@@ -1,21 +1,31 @@
 <html>
   <head>
     <title>Tetris</title>
+    <link rel="stylesheet" href="./css/tetris.css" charset="utf-8">
   </head>
-
   <body>
-    <!-- <h1>Tetris!<h1>
-    <ul>
-      <li>move left: left</li>
-      <li>move right: right</li>
-      <li>rotate: up</li>
-      <li>down one: down</li>
-      <li>down all: space</li>
-    </ul> -->
-    <canvas style="border: 1px solid black"></canvas>
-    <br>
-    <strong class='score'></score>
-    <!-- // <script type="application/javascript" src="vendor/keymaster.js"></script> -->
+    <div class="main">
+      <h1 class="heading">Tetris!<h1>
+      <div class="canvas-container">
+        <canvas style="border: 1px solid black"></canvas>
+      </div>
+      <div class="other">
+        <h3 class="instructions">Instructions</h3>
+        <ul>
+          <li><span class="left">move left: </span><span class="right">left</span></li>
+          <li><span class="left">move right: </span> <span class="right">right</span></li>
+          <li><span class="left">rotate: </span> <span class="right">up</span></li>
+          <li><span class="left">down one: </span> <span class="right">down</span></li>
+          <li><span class="left">down all: </span> <span class="right">space</span></li>
+          <li><span class="left">pause: </span> <span class="right">escape</span></li>
+        </ul>
+        <div class="misc">
+          <button type="button" class="restart">Restart</button>
+          <strong class='score'></strong>
+        </div>
+        <h3 class="paused"></h3>
+      </div>
+    </div>
     <script src="lib/jquery-1.11.2.js"></script>
     <script type="application/javascript" src="lib/util.js"></script>
     <script type="application/javascript" src="lib/piece.js"></script>
@@ -24,10 +34,6 @@
     <script type="application/javascript" src="lib/gameView.js"></script>
     <script type="application/javascript">
       (function () {
-        // var canvasEl = document.getElementsByTagName("canvas")[0];
-        // canvasEl.width = Tetris.Board.DIMS[1];
-        // canvasEl.height = Tetris.Board.DIMS[0];
-        // var ctx = canvasEl.getContext("2d");
         var $canvasEl = $('canvas')
         $canvasEl.prop("width", Tetris.Board.DIMS[1]);
         $canvasEl.prop("height", Tetris.Board.DIMS[0]);
