@@ -82,6 +82,12 @@ span.right {
 
 h3.paused {
   margin: 0 auto;
+  /*padding: 25px 0;*/
+  text-align: center;
+}
+
+h3.level {
+  margin: 0 auto;
   padding: 25px 0;
   text-align: center;
 }
