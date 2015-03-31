@@ -17,7 +17,7 @@
           <li><span class="left">rotate: </span> <span class="right">up</span></li>
           <li><span class="left">down one: </span> <span class="right">down</span></li>
           <li><span class="left">down all: </span> <span class="right">space</span></li>
-          <li><span class="left">pause: </span> <span class="right">escape</span></li>
+          <li><span class="left">pause game: </span> <span class="right">escape</span></li>
         </ul>
         <div class="misc">
           <button type="button" class="restart">Restart</button>
@@ -27,6 +27,34 @@
         <h3 class="paused"></h3>
       </div>
     </div>
+
+    <audio class="music" controls loop>
+      <source src="media/tetris.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="lineclear" controls "none">
+      <source src="media/line_clear.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="rotate" controls "none">
+      <source src="media/rotate.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="move" controls "none">
+      <source src="media/move.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="land" controls "none">
+      <source src="media/land.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="gameover" controls "none">
+      <source src="media/gameover.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="levelup" controls "none">
+      <source src="media/levelup.mp3" type="audio/mpeg">
+    </audio>
+
     <script src="lib/jquery-1.11.2.js"></script>
     <script type="application/javascript" src="lib/util.js"></script>
     <script type="application/javascript" src="lib/piece.js"></script>

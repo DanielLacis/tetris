@@ -1,7 +1,7 @@
 h1.heading {
   text-align: center;
   width: 100%;
-  padding: 25px 0 0 0;
+  padding: 10px 0 0 0;
   font-size: 32pt;
 }
 
@@ -90,4 +90,8 @@ h3.level {
   margin: 0 auto;
   padding: 25px 0;
   text-align: center;
+}
+
+audio {
+  display: none
 }
