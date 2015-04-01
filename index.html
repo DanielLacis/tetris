@@ -7,7 +7,7 @@
     <div class="main">
       <h1 class="heading">Tetris!<h1>
       <div class="canvas-container">
-        <canvas style="border: 1px solid black"></canvas>
+        <canvas class="main" style="border: 1px solid black"></canvas>
       </div>
       <div class="other">
         <h3 class="instructions">Instructions</h3>
@@ -25,6 +25,7 @@
         </div>
         <h3 class="level"></h3>
         <h3 class="paused"></h3>
+        <canvas class="next-piece"></canvas>
       </div>
     </div>
 
@@ -67,12 +68,16 @@
     <script type="application/javascript" src="lib/gameView.js"></script>
     <script type="application/javascript">
       (function () {
-        var $canvasEl = $('canvas')
+        var $canvasEl = $('canvas.main')
         $canvasEl.prop("width", Tetris.Board.DIMS[1]);
         $canvasEl.prop("height", Tetris.Board.DIMS[0]);
+        var $nextPieceCanvasEl = $('canvas.next-piece');
+        $nextPieceCanvasEl.prop("width", Tetris.Piece.DIM * 5);
+        $nextPieceCanvasEl.prop("height", Tetris.Piece.DIM * 5);
         var ctx = $canvasEl[0].getContext("2d");
+        var nextPieceCtx = $nextPieceCanvasEl[0].getContext("2d");
         var game = new Tetris.Game();
-        new Tetris.GameView(game, ctx).start();
+        new Tetris.GameView(game, ctx, nextPieceCtx).start();
       })();
     </script>
   </body>
