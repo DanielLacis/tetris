@@ -10,6 +10,7 @@
         <canvas class="main" style="border: 1px solid black"></canvas>
       </div>
       <div class="other">
+        <canvas class="next-piece"></canvas>
         <h3 class="instructions">Instructions</h3>
         <ul>
           <li><span class="left">move left: </span><span class="right">left</span></li>
@@ -25,7 +26,6 @@
         </div>
         <h3 class="level"></h3>
         <h3 class="paused"></h3>
-        <canvas class="next-piece"></canvas>
       </div>
     </div>
 
@@ -72,8 +72,8 @@
         $canvasEl.prop("width", Tetris.Board.DIMS[1]);
         $canvasEl.prop("height", Tetris.Board.DIMS[0]);
         var $nextPieceCanvasEl = $('canvas.next-piece');
-        $nextPieceCanvasEl.prop("width", Tetris.Piece.DIM * 5);
-        $nextPieceCanvasEl.prop("height", Tetris.Piece.DIM * 5);
+        $nextPieceCanvasEl.prop("width", Tetris.Piece.DIM * 18);
+        $nextPieceCanvasEl.prop("height", Tetris.Piece.DIM * 6);
         var ctx = $canvasEl[0].getContext("2d");
         var nextPieceCtx = $nextPieceCanvasEl[0].getContext("2d");
         var game = new Tetris.Game();
