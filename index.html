@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Tetris</title>
@@ -67,18 +68,16 @@
     <script type="application/javascript" src="lib/game.js"></script>
     <script type="application/javascript" src="lib/gameView.js"></script>
     <script type="application/javascript">
-      (function () {
-        var $canvasEl = $('canvas.main')
-        $canvasEl.prop("width", Tetris.Board.DIMS[1]);
-        $canvasEl.prop("height", Tetris.Board.DIMS[0]);
-        var $nextPieceCanvasEl = $('canvas.next-piece');
-        $nextPieceCanvasEl.prop("width", Tetris.Piece.DIM * 18);
-        $nextPieceCanvasEl.prop("height", Tetris.Piece.DIM * 6);
-        var ctx = $canvasEl[0].getContext("2d");
-        var nextPieceCtx = $nextPieceCanvasEl[0].getContext("2d");
-        var game = new Tetris.Game();
-        new Tetris.GameView(game, ctx, nextPieceCtx).start();
-      })();
+      var $canvasEl = $('canvas.main');
+      $canvasEl.prop("width", Tetris.Board.DIMS[1]);
+      $canvasEl.prop("height", Tetris.Board.DIMS[0]);
+      var $nextPieceCanvasEl = $('canvas.next-piece');
+      $nextPieceCanvasEl.prop("width", Tetris.Piece.DIM * 18);
+      $nextPieceCanvasEl.prop("height", Tetris.Piece.DIM * 6);
+      var ctx = $canvasEl[0].getContext("2d");
+      var nextPieceCtx = $nextPieceCanvasEl[0].getContext("2d");
+      var game = new Tetris.Game();
+      new Tetris.GameView(game, ctx, nextPieceCtx).start();
     </script>
   </body>
 </html>
