@@ -95,3 +95,18 @@ h3.level {
 audio {
   display: none
 }
+
+canvas.next-piece {
+  border: 1px solid black;
+}
+
+div.canvas-next-container {
+  clear: both;
+  content: "";
+  display: inline-block;
+  border: 10px solid cornflowerblue;
+}
+
+canvas {
+  display: block;
+}
