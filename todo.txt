@@ -2,3 +2,4 @@ add tabindex?
 set autofocus to game
 pause music option
 start, restart buttons on screen
+update readme.md
