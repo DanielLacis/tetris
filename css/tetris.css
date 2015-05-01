@@ -34,7 +34,8 @@ button.restart {
 }
 
 strong.score {
-  float: left
+  float: left;
+  font-size: 18pt;
 }
 
 div.other > ul {
@@ -69,7 +70,7 @@ h3.instructions {
 }
 
 body {
-
+  background-color: #C6E2FF;
 }
 
 span.left {
@@ -84,12 +85,14 @@ h3.paused {
   margin: 0 auto;
   /*padding: 25px 0;*/
   text-align: center;
+  font-size: 24pt;
 }
 
 h3.level {
   margin: 0 auto;
   padding: 25px 0;
   text-align: center;
+  font-size: 24pt;
 }
 
 audio {
