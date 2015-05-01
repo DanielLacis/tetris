@@ -1,2 +1,1 @@
-start, restart buttons on screen
 enable audio button
