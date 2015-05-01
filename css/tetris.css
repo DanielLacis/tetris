@@ -81,13 +81,6 @@ span.right {
   float: right
 }
 
-h3.paused {
-  margin: 0 auto;
-  /*padding: 25px 0;*/
-  text-align: center;
-  font-size: 24pt;
-}
-
 h3.level {
   margin: 0 auto;
   padding: 25px 0;

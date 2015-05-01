@@ -7,7 +7,6 @@
   <body>
     <div class="main">
       <h1 class="heading">Tetris!<h1>
-      <h3 class="paused"></h3>
       <div class="canvas-container">
         <canvas class="main" style="border: 1px solid black"></canvas>
       </div>
@@ -17,6 +16,7 @@
         </div>
         <h3 class="instructions">Instructions</h3>
         <ul>
+          <li><span class="left">Toggle audio: </span><span class="right">enter</span></li>
           <li><span class="left">move left: </span><span class="right">left</span></li>
           <li><span class="left">move right: </span> <span class="right">right</span></li>
           <li><span class="left">rotate: </span> <span class="right">up</span></li>
@@ -32,8 +32,8 @@
       </div>
     </div>
 
-    <audio class="music" controls loop>
-      <!-- <source src="media/tetris.mp3" type="audio/mpeg"> -->
+    <audio id="music" controls "none">
+      <source src="media/tetris.mp3" type="audio/mpeg">
     </audio>
 
     <audio class="lineclear" controls "none">
